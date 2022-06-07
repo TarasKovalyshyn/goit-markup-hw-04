@@ -111,9 +111,6 @@ img {
 }
 
 /*------------------------header-icon--------------------------------------*/
-.header-contacts-icon {
-  margin-right: 10px;
-}
 
 .contact-item {
   width: 100%;
@@ -124,13 +121,12 @@ img {
   justify-content: center;
 }
 
-.header-contacts-icon {
+.contacts-icon {
   margin-right: 10px;
-  fill: var(--mail-color);
+
 }
 
-.header-mail,
-.header-tel {
+.header-contact-icon {
   display: block;
   font-family: inherit;
   font-weight: 500;
@@ -139,10 +135,26 @@ img {
   letter-spacing: 0.02em;
   color: var(--mail-color);
 }
-.header-mail:focus,
-.header-mail:hover{
-  fill: var(--main-second-color);
+/*.header-mail:focus,
+.header-mail:hover,
+.header-tel:focus,
+.header-tel:hover
+{
+  color: var(--main-second-color);
+}*/
+.header-contact-icon:focus,
+.header-contact-icon:hover{
+  color: var(--main-second-color);
 }
+
+
+
+
+.header-icon{
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 
 
 /*------------- section bussines ----------------*/
@@ -618,6 +630,6 @@ img {
   display: block;
 }
 .portfolio-link:hover,
-.portfolio-link:hover {
+.portfolio-link:focus {
   box-shadow: var(--card-shadow);
 }
